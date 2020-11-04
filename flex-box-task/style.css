@@ -46,16 +46,24 @@ li:first-child {
   margin-top: 6rem;
 }
 
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 h2 {
-  font-size: 4rem;
-  padding-left: 5rem;
-  letter-spacing: 0.8rem;
-  padding-bottom: 1.5rem;
+  font-size: 6rem;
+  letter-spacing: 0.2rem;
+  padding-bottom: 0.5rem;
 }
 
 .para {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: grey;
+  text-align: center;
+  width: 40%;
+  line-height: 3rem;
 }
 
 .container {
@@ -67,6 +75,52 @@ h2 {
   width: 70%;
   margin: auto;
   font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .img {
+    flex: 1s;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+  }
+  .img p {
+    margin: 0;
+    padding-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .img button {
+    margin: 0;
+  }
+  h2 {
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    padding-bottom: 1.5rem;
+  }
+  .para {
+    font-size: 1.6rem;
+    text-align: center;
+    width: 80%;
+    line-height: 2.3rem;
+    margin: 0;
+  }
+  .navbar ul {
+    padding: 0 5%;
+  }
+  li {
+    padding: 2rem 1rem;
+
+    font-size: 1.2rem;
+    color: grey;
+  }
 }
 
 img {
